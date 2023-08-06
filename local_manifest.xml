@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote name="ghub"
         fetch="https://github.com" />
         
+ <remote name="mani" fetch="https://github.com/ManitnjG" />
+<remote name="z3zens" fetch="https://github.com/z3zens" />
+ <remote name="darshan" fetch="https://github.com/mevadadarshan19" />
+  <remote name="clang" fetch="https://gitlab.com/Amritorock" />
 
- <!-- Trees -->
-  <project path="device/asus/X01BD" name="ManitnjG/havoc11" remote="ghub" revision="havoc" clone-depth="1" />
-  <project path="device/asus/sdm660-common" name="SonalSingh18/android_device_asus_sdm660-common" remote="ghub" revision="eleven" clone-depth="1" />
-  <project path="vendor/asus" name="SonalSingh18/android_vendor_asus_sdm660" remote="ghub" revision="eleven" clone-depth="1" />
-  <project path="kernel/asus/sdm660" name="SonalSingh18/android_kernel_asus_sdm660" remote="ghub" revision="eleven" clone-depth="1" />
-
+ <project path="device/asus/X01BD" name="new" remote="mani" revision="lineage" clone-depth="1" />
+ <project path="device/asus/sdm660-common" name="android_device_asus_sdm660-common" remote="darshan" revision="derp" clone-depth="1" />	
+ <project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660" remote="z3zens" revision="lineage-20" clone-depth="1" />
+ <project path="vendor/asus" name="proprietary_vendor_asus" remote="darshan" revision="lineage-20" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
   </manifest>
